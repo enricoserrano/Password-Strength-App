@@ -2,7 +2,6 @@ import React from 'react'
 import zxcvbn from 'zxcvbn'
 
 const PasswordStrength = ({ password }) => {
-
     const testResult = zxcvbn(password);
     const num = testResult.score * 100/4;
     const passwordlabel = () => {
